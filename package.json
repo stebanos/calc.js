@@ -1,0 +1,27 @@
+{
+  "name": "calc.js",
+  "description": "A little javascript calculator",
+  "keywords": [
+    "calculator"
+  ],
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stebanos/calc.js.git"
+  },
+  "dependencies": {
+    "react": "^0.11.1"
+  },
+  "devDependencies": {
+    "browserify": "^5.12.1",
+    "jshint": "~2.4.4",
+    "watchify": "^1.0.6"
+  },
+  "main": "./src/calc.js",
+  "scripts": {
+    "ensure-build-dir": "mkdir -p build",
+    "browserify": "npm run ensure-build-dir && browserify src/calc.js --standalone calc > build/calc.js",
+    "watchify": "npm run ensure-build-dir && watchify src/calc.js --standalone calc --debug -o build/calc.js -v"
+  }
+}

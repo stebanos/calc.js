@@ -1,0 +1,15 @@
+calc.js
+=======
+
+calc.js is a mini calculator written in javascript and React.
+It's a javascript port of the calculator example written in Elm:
+
+<http://elm-lang.org/edit/examples/Intermediate/Calculator.elm>
+
+To build the code, install node.js:
+
+    brew install nodejs
+    npm install
+    npm run browserify
+
+The calculator.html file can then be opened.

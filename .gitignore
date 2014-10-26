@@ -1,0 +1,11 @@
+# Node
+/node_modules
+/build
+
+# Metadata
+.DS_Store
+Thumbs.db
+
+# IDE
+*.iml
+.idea
