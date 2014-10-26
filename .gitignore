@@ -1,6 +1,7 @@
 # Node
 /node_modules
 /build
+/public/js
 
 # Metadata
 .DS_Store

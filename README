@@ -10,6 +10,9 @@ To build the code, install node.js:
 
     brew install nodejs
     npm install
-    npm run browserify
 
-The calculator.html file can then be opened.
+The index.html file inside the public folder can then be opened.
+
+To serve as a web app, add an extra step:
+
+    npm start

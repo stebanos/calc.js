@@ -11,17 +11,20 @@
     "url": "https://github.com/stebanos/calc.js.git"
   },
   "dependencies": {
-    "react": "^0.11.1"
-  },
-  "devDependencies": {
+    "react": "^0.11.1",
+    "express": "~3.4.8",
     "browserify": "^5.12.1",
-    "jshint": "~2.4.4",
     "watchify": "^1.0.6"
   },
-  "main": "./src/calc.js",
+  "devDependencies": {
+    "jshint": "~2.4.4"
+  },
+  "main": "src/app.js",
   "scripts": {
-    "ensure-build-dir": "mkdir -p build",
-    "browserify": "npm run ensure-build-dir && browserify src/calc.js --standalone calc > build/calc.js",
-    "watchify": "npm run ensure-build-dir && watchify src/calc.js --standalone calc --debug -o build/calc.js -v"
+    "start": "node src/app.js",
+    "ensure-build-dir": "mkdir -p public/js",
+    "browserify": "npm run ensure-build-dir && browserify src/calc.js --standalone calc > public/js/calc.js",
+    "watchify": "npm run ensure-build-dir && watchify src/calc.js --standalone calc --debug -o public/js/calc.js -v",
+    "postinstall": "npm run browserify"
   }
 }
